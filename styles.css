@@ -1,0 +1,953 @@
+* {
+	box-sizing: border-box;
+	outline: 0 none;
+	margin: 0;
+	padding: 0;
+}
+
+body {	
+	min-height: 100vh;
+	position: relative;
+	padding-bottom: 100px;
+	background-color: #abe1e7;
+	color: black;
+	font-family: "Roboto", sans-serif;
+}
+
+p {
+	font-family: Arial, Helvetica, sans-serif;
+	letter-spacing: -0.2px;
+}
+
+img {
+	display: block;
+}
+
+h1 {
+	letter-spacing: 1px;
+}
+
+a {
+	text-decoration: none;
+	color: white;
+}
+
+/************  Main section starts ************/
+
+.container {
+	padding: 40px 5%;
+}
+
+.container-head h2 {
+	left: 0;
+}
+
+.tabs {
+	display: flex;
+	justify-content: left;
+	list-style-type: none;
+}
+
+.tab {
+	cursor: pointer;
+	padding: 12px 50px;
+}
+
+.tab.active {
+	border-bottom: 1px solid #ff6b60;
+}
+
+.tab:hover {
+	background-color: #ff6b60;
+}
+
+[data-tab-content] {
+	display: none;
+}
+
+.active[data-tab-content] {
+	display: block;
+}
+
+/******** CARD SECTION *******/
+
+.card-container {
+	margin: 0.25%;
+	background-color: white;
+	color: black;
+	overflow: hidden;
+	width: 49.5%;
+	float: left;
+}
+.float-layout {
+	float: left;
+	width: 100%;
+	cursor: pointer;
+}
+
+.float-layout a {
+	text-decoration: none;
+	color: black;
+}
+
+.card {
+	width: 75%;
+	float: right;
+	padding-right: 1%;
+}
+
+.card-desc {
+	padding-top: 1%;
+	text-align: left;
+}
+
+.card-desc h3 {
+	display: flex;
+	justify-content: center;
+	padding-right: 20%;
+}
+
+.card-image {
+	display: flex;
+}
+
+.card-image img {
+	width: 25%;
+	height: 15vw;
+	padding: 1%;
+	object-fit: cover;
+}
+
+.card-timing {
+	font-size: 10px;
+}
+
+.card-detail {
+	font-size: 14px;
+	text-align: justify;
+	letter-spacing: -0.4px;
+}
+
+@media screen and (max-width: 1070px) and (min-width: 700px) {
+	.container {
+		padding: 40px 4%;
+	}
+	.card-container {
+		width: 100%;
+	}
+	.card-image img {
+		width: 21%;
+		height: 28vw;
+	}
+	.card {
+		width: 75%;
+	}
+	.card-detail {
+		font-size: 16px;
+	}
+}
+
+@media screen and (max-width: 700px) {
+	.container {
+		padding: 40px 3%;
+	}
+	.card-container {
+		width: 100%;
+	}
+	.card-image img {
+		width: 26%;
+		height: 36vw;
+	}
+	.card {
+		width: 71%;
+	}
+	.card-detail {
+		font-size: 15px;
+	}
+}
+
+/******** CARD SECTION *******/
+
+/*********** LOGIN SECTION ***********/
+
+.login {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	margin: 2% 0;
+}
+
+.logincontent {
+	display: flex;
+	justify-content: center;
+	padding: 3% 0;
+	width: 40%;
+	background-color: white;
+	color: black;
+}
+
+.loginflex {
+	width: 75%;
+}
+
+.loginflex h2 {
+	font-size: 30px;
+	text-transform: uppercase;
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+.loginflex p {
+	font-size: 16px;
+	margin: 6px 0;
+}
+
+.loginflex input {
+	width: 100%;
+	padding: 2% 4%;
+	font-size: 16px;
+}
+
+.loginflex button {
+	font-size: 16px;
+	padding: 1% 3%;
+	margin: 2% 0;
+	background-color: green;
+	color: white;
+	cursor: pointer;
+}
+
+.loginbutton {
+	background-color: green;
+	color: white;
+	font-size: 16px;
+	padding: 1% 3%;
+	margin: 2% 0;
+	text-decoration: none;
+	border-top: 2px solid grey;
+	border-left: 2px solid grey;
+	border-right: 2px solid black;
+	border-bottom: 2px solid black;
+	cursor: pointer;
+}
+
+@media screen and (max-width: 1000px) and (min-width: 700px) {
+	.logincontent {
+		width: 75%;
+		margin-bottom: 1%;
+		padding-bottom: 5%;
+	}
+	.loginflex h2 {
+		font-size: 45px;
+	}
+	.loginflex p {
+		font-size: 18px;
+		margin: 6px 0;
+	}
+
+	.loginflex input {
+		width: 100%;
+		padding: 2% 4%;
+		font-size: 18px;
+	}
+	.loginflex button {
+		font-size: 18px;
+	}
+	.loginbutton {
+		font-size: 18px;
+	}
+}
+
+@media screen and (max-width: 700px) {
+	.logincontent {
+		width: 85%;
+		margin-top: 3%;
+		margin-bottom: 1%;
+		padding-bottom: 5%;
+	}
+	.loginflex h2 {
+		font-size: 40px;
+	}
+	.loginflex p {
+		font-size: 17px;
+		margin: 6px 0;
+	}
+
+	.loginflex input {
+		width: 100%;
+		padding: 2% 4%;
+		font-size: 17px;
+	}
+	.loginflex button {
+		font-size: 17px;
+	}
+	.loginbutton {
+		font-size: 17px;
+	}
+}
+
+/*********** LOGIN SECTION ***********/
+
+.profile {
+	margin: 3% 7% 0 7%;
+	width: 86%;
+	padding: 4% 5% 1% 5%;
+	background-color: white;
+	color: black;
+	display: flex;
+	justify-content: space-between;
+}
+
+.profile1 {
+	width: 135px;
+	height: 180px;
+	position: relative;
+}
+
+.updatePhoto {
+	width: 100%;
+	padding: 4% 6%;
+	z-index: 100;
+	position: absolute;
+	color: white;
+	background-color: rgba(0, 0, 0, 0.5);
+	bottom: 0;
+	display: flex;
+	justify-content: center;
+	cursor: pointer;
+	visibility: hidden;
+}
+
+.profile1:hover .updatePhoto {
+	visibility: visible;
+}
+
+.profile1 img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	overflow: hidden;
+	display: block;
+}
+
+.profile2 button {
+	padding: 0.5%;
+	color: white;
+	cursor: pointer;
+}
+
+.profile2 {
+	padding-left: 40px;
+	width: 80%;
+	height: 180px;
+	background-color: rgb(215, 244, 255);
+	display: flex;
+	justify-content: space-evenly;
+	align-items: flex-start;
+	flex-direction: column;
+}
+
+.profile2 p {
+	font-weight: bold;
+}
+
+#updateImage {
+	margin: 0 7% 0 7%;
+	width: 86%;
+	padding: 0 5% 3% 5%;
+	background-color: white;
+	color: black;
+	display: none;
+}
+
+.logoutbutton {
+	color: white;
+	text-decoration: none;
+	background-color: rgb(255, 79, 79);
+	padding: 7px 10px;
+	border: none;
+	border-radius: 10px;
+	cursor: pointer;
+}
+
+.postform {
+	margin: 0 7% 1% 7%;
+	width: 86%;
+	padding: 0 5% 5% 5%;
+	background-color: white;
+	color: black;
+	display: block;
+}
+
+.addpost {
+	text-decoration: none;
+	font-weight: bolder;
+	padding: 7px 11px;
+	color: white;
+	background-color: rgb(104, 104, 255);
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+.postform1 {
+	display: flex;
+	justify-content: center;
+}
+
+.postform2 p {
+	padding: 8px 0 0 0;
+}
+
+.postform2 input {
+	padding: 3px 0 3px 0;
+}
+
+.postform2 p,
+input {
+	font-size: 15px;
+}
+
+.postform2 button {
+	padding: 4px 7px;
+	font-size: 14px;
+	background-color: rgb(104, 104, 255);
+	color: white;
+	border-radius: 5px;
+	cursor: pointer;
+	border: none;
+}
+
+#postform3 {
+	display: none;
+}
+
+#postform4 {
+	display: none;
+}
+
+.profileReview {
+	margin: 0 7% 3% 7%;
+	width: 86%;
+	padding: 4% 7% 5% 7%;
+	background-color: white;
+	color: black;
+}
+
+.profileReviewH2 {
+	display: flex;
+	justify-content: center;
+	padding-bottom: 3px;
+}
+
+.underline {
+	width: 40%;
+	margin-left: auto;
+	margin-right: auto;
+	border-bottom: 1.5px solid black;
+}
+
+.profileReviewContainer {
+	padding-top: 5px;
+	width: 100%;
+}
+
+.profileCardImage {
+	display: flex;
+}
+
+.profileCardImage img {
+	width: 15%;
+	height: 15vw;
+	padding: 1% 1% 1% 0;
+	object-fit: cover;
+}
+
+.profileCard {
+	padding: 1% 1% 1% 0;
+}
+
+.profileCard h3 {
+	font-size: 20px;
+}
+
+.profileCard a {
+	text-decoration: none;
+	color: black;
+}
+
+.profileCard h5 {
+	font-size: 12px;
+}
+
+.profileTime {
+	font-size: 10px;
+}
+
+.profileDesc {
+	font-size: 15px;
+	text-align: justify;
+}
+
+/******* FRIEND SECTION *******/
+
+.container-friend {
+	background-color: white;
+	color: black;
+	margin: 3% 15% 0 15%;
+	width: 70%;
+	padding: 1% 3% 0 3%;
+}
+
+.myimage {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.imagesize {
+	width: 130px;
+	height: 140px;
+}
+
+.imagesize img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	overflow: hidden;
+	display: block;
+	border-radius: 100px;
+	border: 2px solid black;
+	padding: 2px;
+}
+
+.container-friend1 {
+	background-color: white;
+	color: black;
+	margin: 1% 15% 2% 15%;
+	width: 70%;
+}
+
+.all-user {
+	border: 1px solid gray;
+	margin: 1%;
+	width: 48%;
+	height: 60px;
+	position: relative;
+	float: left;
+}
+
+.user-container {
+	display: flex;
+	padding: 1%;
+}
+
+.image1 {
+	margin-right: 4px;
+	height: 50px;
+	width: 50px;
+}
+
+.content1 {
+	width: 100%;
+	padding-left: 5px;
+}
+
+.content1 button {
+	padding: 1%;
+	background-color: rgb(104, 104, 255);
+	color: white;
+	cursor: pointer;
+}
+
+.image1 img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	overflow: hidden;
+	display: block;
+	padding-top: 1%;
+	padding-right: 1%;
+}
+
+@media screen and (max-width: 1000px) and (min-width: 700px) {
+	.container-friend {
+		margin: 3% 8% 0 8%;
+		width: 84%;
+	}
+	.container-friend1 {
+		margin: 3% 8% 0 8%;
+		width: 84%;
+	}
+}
+
+@media screen and (max-width: 700px) {
+	.container-friend {
+		margin: 3% 5% 0 5%;
+		width: 90%;
+	}
+	.container-friend1 {
+		margin: 3% 5% 0 5%;
+		width: 90%;
+	}
+}
+
+/******* FRIEND SECTION *******/
+
+.comments input {
+	width: 100%;
+	height: 30px;
+	margin: 1% 0 0.5% 0;
+}
+
+.comments button {
+	width: 100%;
+	padding: 0.5% 1%;
+	background-color: rgb(78, 143, 78);
+	color: white;
+	font-size: 14px;
+}
+
+.user-comment {
+	width: 100%;
+	margin-top: 0.5%;
+	margin-bottom: 1%;
+	border: 1px solid grey;
+	border-radius: 10px;
+	display: flex;
+	padding: 0.1%;
+	background-color: #bcc9ca;
+}
+
+.comment-image {
+	margin-right: 4px;
+	height: 55px;
+	width: 55px;
+}
+
+.comment-image img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	overflow: hidden;
+	display: block;
+	border-radius: 30px;
+}
+
+/************  Main section ends ************/
+
+/************ Header section starts ************/
+
+.navbar {
+	display: flex;
+	position: relative;
+	justify-content: space-between;
+	align-items: center;
+	background-color: #ff6b60;
+	color: white;
+	padding-right: 1%;
+	box-shadow: 0 15px 40px -23px black;
+}
+
+.brand-title {
+	padding: 1rem 2rem;
+	font-size: 2.7rem;
+	margin: 0.3rem;
+	font-weight: bolder;
+	letter-spacing: 1px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar-links {
+	height: 100%;
+}
+
+.navbar-links ul {
+	display: flex;
+	margin: 0;
+	padding: 0;
+}
+
+.navbar-links li {
+	list-style: none;
+}
+
+.navbar-links li a {
+	font-weight: bolder;
+	display: block;
+	text-decoration: none;
+	color: white;
+	padding: 1rem 2rem;
+	font-size: 1.2rem;
+}
+
+.navbar-links li:hover {
+	background-color: #ff6b60;
+}
+
+.toggle-button {
+	position: absolute;
+	top: 2rem;
+	right: 2rem;
+	display: none;
+	flex-direction: column;
+	justify-content: space-between;
+	width: 30px;
+	height: 21px;
+}
+
+.toggle-button .bar {
+	height: 3px;
+	width: 100%;
+	background-color: white;
+	border-radius: 10px;
+}
+
+.navbar-links a:hover {
+	color: black;
+}
+
+.brand-title:hover {
+	color: black;
+	cursor: pointer;
+}
+
+@media (max-width: 800px) {
+	.navbar {
+		flex-direction: column;
+		align-items: flex-start;
+	}
+
+	.toggle-button {
+		display: flex;
+	}
+
+	.navbar-links {
+		display: none;
+		width: 100%;
+	}
+
+	.navbar-links ul {
+		width: 100%;
+		flex-direction: column;
+	}
+
+	.navbar-links ul li {
+		text-align: center;
+	}
+
+	.navbar-links ul li a {
+		padding: 0.5rem 1rem;
+	}
+
+	.navbar-links.active {
+		display: flex;
+	}
+}
+
+/************ Header section ends ************/
+
+/************ Tab Switch Starts ************/
+
+.active-tabs input {
+	opacity: 0;
+	display: none;
+	visibility: hidden;
+}
+
+.btn {
+	background-color: rgb(104, 104, 255);
+	color: #fff;
+	cursor: pointer;
+	float: left;
+	line-height: 45px;
+	margin-right: 3px;
+	text-align: center;
+	width: 160px;
+	font-weight: bolder;
+}
+
+.active-tabs input:checked + label {
+	background: #ff6b60;
+	color: white;
+}
+
+.tabs-container {
+	width: 100%;
+	position: relative;
+	float: right;
+	background: #fff;
+	color: black;
+}
+
+.p1 {
+	height: 200px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	opacity: 0;
+	visibility: hidden;
+	transition: all 0.4s;
+}
+
+.btn-1:checked ~ .tabs-container .tab-1,
+.btn-2:checked ~ .tabs-container .tab-2,
+.btn-3:checked ~ .tabs-container .tab-3,
+.btn-4:checked ~ .tabs-container .tab-4 {
+	position: relative;
+	visibility: visible;
+	opacity: 1;
+}
+
+.active-tabs label a {
+	background-color: rgb(104, 104, 255);
+	color: #fff;
+	cursor: pointer;
+	float: left;
+	line-height: 45px;
+	margin-right: 3px;
+	text-align: center;
+	width: 160px;
+	font-weight: bolder;
+}
+
+/************ Tab Switch ends ************/
+
+/************ Footer section starts ************/
+
+.footer {
+	background-color: #ff6b60;
+	color: white;
+	font-weight: bolder;
+	display: flex;
+	align-items: center;
+	width: 100%;
+	height: 6vw;
+	position: absolute;
+	bottom: 0;
+}
+
+.footer img {
+	margin-left: 1%;
+	height: 90%;
+	border-radius: 100px;
+	margin-right: 2%;
+	border: 2px solid white;
+}
+
+.footermarg {
+	margin-right: 25%;
+}
+
+@media screen and (max-width: 1000px) and (min-width: 700px) {
+	.footer {
+		height: 10vw;
+	}
+
+	.footermarg {
+		margin-right: 15%;
+	}
+}
+
+@media screen and (max-width: 700px) {
+	.footer {
+		height: 18vw;
+	}
+
+	.footermarg {
+		margin-right: 4%;
+	}
+	.footer img {
+		margin-left: 2%;
+		height: 90%;
+		border-radius: 100px;
+		margin-right: 2%;
+	}
+}
+
+/************ Footer section ends ************/
+
+@media screen and (max-width: 1000px) and (min-width: 700px) {
+	.btn {
+		line-height: 40px;
+		margin-right: 2px;
+		width: 120px;
+	}
+	.active-tabs label a {
+		line-height: 40px;
+		width: 120px;
+	}
+	.comments input {
+		height: 37px;
+	}
+	.comments button {
+		height: 32px;
+	}
+	.profileCardImage img {
+		width: 24%;
+		height: 26vw;
+	}
+	.profileCard {
+		width: 76%;
+	}
+}
+
+@media screen and (max-width: 700px) {
+	.btn {
+		line-height: 45px;
+		margin-right: 2px;
+		width: 100px;
+	}
+	.active-tabs label a {
+		line-height: 45px;
+		width: 100px;
+	}
+	.all-user {
+		width: 100%;
+		margin: 0;
+		border: none;
+		border-bottom: 1px solid gray;
+	}
+	.comments input {
+		height: 40px;
+	}
+	.comments button {
+		height: 35px;
+	}
+	.profile {
+		margin: 3% 5% 0 5%;
+		width: 90%;
+	}
+	.postform {
+		margin: 0 5% 1% 5%;
+		width: 90%;
+	}
+	.profileReview {
+		margin: 0 5% 3% 5%;
+		width: 90%;
+	}
+	.profile1 {
+		width: 130px;
+		height: 170px;
+	}
+	.profile2 {
+		height: 170px;
+		padding-left: 10px;
+		margin-left: 5px;
+	}
+	.profileCardImage img {
+		width: 36%;
+		margin-left: 32%;
+		height: 35vw;
+	}
+	.profileCard {
+		width: 100%;
+	}
+	.profileCardImage {
+		display: block;
+	}
+	#updateImage {
+		margin: 0 5% 0 5%;
+		width: 90%;
+	}
+}
