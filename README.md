@@ -5,9 +5,9 @@ secure user registration and login functionalities.
 - Users can create posts, comment, make friends, and view personalized content.
 - Leveraged PHP for back-end development, enabling seamless communication between the database and the website.
 
-# Deployment- is in process
+## Deployment- is in process
 
-# Demo: https://www.youtube.com/watch?v=PCib2OUK86E
+## Demo: https://www.youtube.com/watch?v=PCib2OUK86E
 
 # Screenshots : 
   ![image](https://github.com/urishitapandita/movieSpace/assets/67178658/3e72e4bc-b63c-47a0-87c2-9df654682e84)
